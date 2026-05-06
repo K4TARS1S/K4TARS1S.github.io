@@ -511,8 +511,10 @@ a.gossip-article {
   padding-top: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  max-height: calc(1.65em * 3); /* fallback au cas où */
 }
 
 .tag-personne {

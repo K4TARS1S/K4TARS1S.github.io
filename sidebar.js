@@ -9,6 +9,8 @@ const STLKPRO = {
   // ── PERSONNES ──────────────────────────
   // { nom, fichier }
   personnes: [
+    { nom: "Gabriel", fichier: "gabriel.html" },
+    { nom: "Omaël", fichier: "omael.html" },
     { nom: "Valentin", fichier: "valentin.html" },
     { nom: "Ptolémée", fichier: "ptolemee.html" },
     // Ajoute une personne ici :
@@ -18,6 +20,7 @@ const STLKPRO = {
   // ── ARTICLES ───────────────────────────
   // { titre, fichier }
   articles: [
+    {titre: "Omaël et Gabriel se marient !", fichier: "05-05-26.html" },
     { titre: "Ptolémée et Miku ?!", fichier: "03_05_26.html" },
     { titre: "Il aime les furrys", fichier: "02_05_26.html" },
     // Ajoute un article ici :

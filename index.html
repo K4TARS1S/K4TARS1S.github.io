@@ -49,6 +49,16 @@
         <div class="nom">PTOLÉMÉE</div>
         <div class="tea">☕ le femboy</div>
       </a>
+      <a href="omael.html" class="personne-card">
+        <img src="img/omael.jpg" alt="Omaël">
+        <div class="nom">OMAËL</div>
+        <div class="tea">☕ le charismatique</div>
+      </a>
+      <a href="gabriel.html" class="personne-card">
+        <img src="img/gabriel.jpg" alt="Gabriel">
+        <div class="nom">GABRIEL</div>
+        <div class="tea">☕ le phasme</div>
+      </a>
     </div>
 
     <hr class="diva-divider">
@@ -57,6 +67,14 @@
     <div class="GOSSIP"><h1>VIVE LE GOSSIP!!</h1></div>
 
     <div class="gossip-feed">
+
+      <a href="05-05-26.html" class="gossip-article">
+          <div class="article-kicker">✦ CHRONIQUE <span class="badge-exclu">HOT</span></div>
+          <h2 class="article-titre"><span class="accroche">VIVE</span> LES MARIéS</h2>
+          <div class="article-meta"><span>05 MAI 2026</span><span>par la rédaction</span></div>
+          <div class="article-resume">Les mariés ont décidé de célébrer leur union dans une ambiance chaleureuse et festive.</div>
+          <span class="lire-suite">LIRE LA SUITE</span>
+        </a>
 
       <a href="02_05_26.html" class="gossip-article">
         <div class="article-kicker">✦ EXCLUSIF <span class="badge-exclu">BREAKING</span></div>
@@ -83,5 +101,28 @@
 </div><!-- /site-wrapper -->
 
   <script src="sidebar.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCrfPyZqz08Xd0dJFjwm-5eGfW_LTlNztU",
+    authDomain: "stlkpro.firebaseapp.com",
+    projectId: "stlkpro",
+    storageBucket: "stlkpro.firebasestorage.app",
+    messagingSenderId: "905873289265",
+    appId: "1:905873289265:web:0efe988d32eb0682562510",
+    measurementId: "G-ZYFWSES3Z5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
