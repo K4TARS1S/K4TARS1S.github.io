@@ -1,0 +1,176 @@
+:root {
+    --black: #000000;
+    --sidebar-w: 190px;
+}
+
+
+body {
+    background-color: var(--black);
+    font-family: 'antique', monospace;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.site-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-w);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 1px solid rgb(255, 255, 255);
+    box-shadow: 4px 0 30px rgba(51, 51, 51, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-logo {
+    color: white;
+}
+
+.mainContent {
+    position: relative;
+    margin-left: var(--sidebar-w);
+    flex: auto;
+    min-width: 0;
+}
+
+marquee {
+    color: white;
+}
+
+header {
+    position: sticky;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+hr.divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, white 20%, grey 50%, rgb(32, 32, 32) 80%, transparent);
+    margin: 18px auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.autorNote {
+    text-align: center;
+}
+
+.bandeau {
+    text-align: center;
+    margin: 35px auto;
+    text-transform: uppercase;
+    font-size: clamp(26px, 5vw, 48px);
+    letter-spacing: 6px;
+}
+
+.personnes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 860px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.personne-card {
+    border: 1px solid white;
+    text-decoration: none;
+}
+.personne-card .nom {
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+}
+.personne-card .tea {
+  font-size: 11px;
+  color: white;
+  opacity: 0.8;
+  margin-top: 3px;
+  font-style: italic;
+}
+.personne-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: sepia(20%) saturate(10%);
+  transition: filter 0.3s ease;
+  display: block;
+  border: 1px solid var(--chrome);
+}
+.personne-card:hover img { filter: sepia(20%) saturate(150%) contrast(130%); }
+
+.feed {
+    max-width: 860px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a .gossip-article {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.gossip-article {
+    position: relative;
+    border: 1px solid rgb(190, 190, 190);
+    text-decoration: none;
+}
+.gossip-article:hover {
+    border: 1px solid white;
+    transition: ease;
+}
+
+.article-kicker {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 4px;
+    opacity: 0.8;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+.article-titre {
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.article-meta {
+    color: white;
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+.article-resume{
+    color: white;
+    padding-left: 10px;
+    max-height: calc(1.65em * 3);
+}
+.lire-suite {
+    color: white;
+    border-bottom: 1px dashed grey;
+    padding-left: 10px;
+}
+.lire-suite::after { content: ' →'; }
