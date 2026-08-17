@@ -174,3 +174,72 @@ a .gossip-article {
     padding-left: 10px;
 }
 .lire-suite::after { content: ' →'; }
+
+.personne-page {
+  max-width: 820px;
+  margin: 30px auto;
+  padding: 0 24px 60px;
+}
+
+.back-btn {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.back-btn::before { content: '← '; }
+
+.personne-fiche {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 28px;
+    margin-bottom: 34px;
+    padding: 24px;
+    position: relative;
+    border: 1px solid white;
+}
+.personne-fiche::before {
+    content: 'DOSSIER #' attr(data-id);
+    position: absolute;
+    top: 10px; right: 16px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.personne-fiche img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+}
+
+.personne-fiche-infos { display: flex; flex-direction: column; gap: 5px; }
+
+.personne-fiche-infos .surnom {
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+
+.personne-fiche-infos .bio {
+    font-size: 13px;
+    padding-top: 6px;
+    margin-top: 4px;
+}
+
+.personne-fiche-infos .stat {
+    font-size: 13px;
+    letter-spacing: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3px 10px;
+}
+.personne-fiche h1 {
+    margin: 0;
+}
